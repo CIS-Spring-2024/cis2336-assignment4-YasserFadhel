@@ -1,0 +1,309 @@
+/* Basic styling for the header, blur -webkit is used for legacy browsers*/
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; 
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px);
+    animation: slideDown 1.5s ease forwards;
+}
+
+
+
+/* Styling for the logo */
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+/* Styling for the navigation bar */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    margin-right: 20px;
+}
+
+nav ul li {
+    margin-right: 20px;
+    padding: 10px 0px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    padding: 25px 25px;
+    transition: background-color 0.5s ease, transform 0.3s ease;
+}
+
+/*Hover behavior for nav bar elements*/
+nav ul li a:hover {
+    transform: scale(1.1);
+    background-color: white;
+    color: rgb(121, 9, 9);
+}
+
+/*Styling for Order Now button*/
+.link {
+    border: 2px;
+    border-radius: 25px;
+    border-color: white;
+    border-style: groove;
+    background-color: white;
+    color: rgb(121, 9, 9);
+    font-weight: bolder;
+    font-size: 16px;
+    margin-right: 20px;
+    padding: 0px 20px;
+    transition: background-color 0.5s ease;
+}
+
+/*Hover behavior for order now button*/
+.link:hover {
+    color: white;
+    background-color: rgb(121, 9, 9);
+}
+
+
+/* Styling for class deal */
+.deal {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: 50px;
+    padding: 50px 0px 50px 50px;
+    border-radius: 50px;
+    background-color: #DCE0E1;
+    box-shadow: 0 20px 20px #75767641;
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: blur(5px);
+    animation: slideUp 2s ease forwards;
+}
+
+/* Styling for the images */
+.deal img {
+    width: 90%;
+    height: 430px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+
+.deal h1 {
+    font-size: 72px;
+    font-family: 'Oswald', sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    transform: translateY(125%);
+}
+
+.deal h2 {
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+}
+
+
+.deal p{
+    font-size: 72px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    transform: translateY(100%);
+}
+
+.title{
+    font-size: 48px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bolder;
+    margin: 50px;
+    color: rgba(0, 0, 0, 0.8);
+    animation: slideUp 2s ease forwards;
+}
+
+
+
+/* Styling for the footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: white; 
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    padding: 20px;
+}
+
+/* Styling for the logo in the footer */
+.footer-left img {
+    max-width: 150px; 
+}
+
+/* Styling for the quicklinks footer */
+#qulink {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.quick-links {
+    text-align: center; 
+}
+
+.quick-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.quick-links ul li {
+    display: inline;
+    margin-right: 10px; 
+}
+
+.quick-links ul li a {
+    color: white; 
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 5px;
+    transition: background-color 0.5s ease, color 0.5s ease; /* Add transition for hover effect */
+}
+
+.quick-links ul li a:hover {
+    color: black; 
+    background-color: white;
+}
+
+/* Styling for the text on the right side of the footer (copyright, and other info) */
+.footer-right {
+    text-align: center;
+    font-style: italic;
+    
+}
+
+
+
+/* For smaller screens, we adjust header padding and font size for elements */
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    /*font size reduction for mutiple elements*/
+    nav ul li a,
+    .link,
+    .title,
+    .about,
+    .location-text,
+    .desc,
+    footer,
+    .quick-links ul li a {
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        padding: 1px;
+        margin-right: 1px;
+    }
+
+
+    .link {
+        padding: 2px 10px;
+    }
+
+    .title {
+        bottom: 180px;
+        left: 20px;
+    }
+
+    .about {
+        margin-top: 400px;
+        padding: 30px;
+    }
+
+    .location-text {
+        width: 80%;
+        font-size: 16px;
+    }
+
+
+    nav ul li a:hover,
+    .quick-links ul li a:hover {
+        transform: none;
+        background-color: transparent;
+        color: white;
+    }
+    .title {
+        position: relative;
+        bottom: -350px; 
+    }
+}
+
+/* For even smaller screens*/
+@media only screen and (max-width: 480px) {
+    .logo img {
+        max-width: 50px;
+    }
+
+    /*font size reduction for mutiple elements*/
+    nav ul li a,
+    .link,
+    .title,
+    .about,
+    .location-text,
+    .desc,
+    footer,
+    .quick-links ul li a {
+        font-size: 14px;
+    }
+
+    nav ul li a {
+        padding: 1px;
+        margin-right: 2px;
+    }
+}
+
+
+
+/* Animation for image sliding down */
+/* Takes end position and starts the element offscreen before sliding it down to position */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animation for text sliding up */
+/* Takes end position and starts the element offscreen before sliding it up to position */
+@keyframes slideUp {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

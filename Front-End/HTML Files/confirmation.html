@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <!---Stylization--->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        .confirmation {
+            margin-top: 50px;
+        }
+        .confirmation h1 {
+            font-size: 32px;
+            font-weight: bolder;
+            margin-bottom: 20px;
+        }
+        .confirmation p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="confirmation">
+        <h1>YOUR ORDER IS CONFIRMED!</h1>
+        <p id="totalAmount">Total amount: </p>
+    </div>
+
+    <!---gets total amount of cart from index.js--->
+    <script>
+        // Retrieve total amount from URL query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const totalAmount = urlParams.get('totalAmount');
+
+        // Display total amount on the page
+        document.getElementById('totalAmount').textContent += `${totalAmount}`;
+    </script>
+</body>
+</html>

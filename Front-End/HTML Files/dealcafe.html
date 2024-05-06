@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS Files/dealcafe.css">
+        <title>CoogEats | Daily Deal</title>
+    </head>
+
+    <body>
+        <!---Navigation bar--->
+        <header>
+            <div class="logo">
+                <img src="../images/cafelogo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../HTML Files/maincafe.html">Home</a></li>
+                    <li><a href="../HTML Files/menucafe.html">Full Menu</a></li>
+                    <li><a href="../HTML Files/dealcafe.html">Daily Deal</a></li>
+                    <li><a href="../HTML Files/contactcafe.html">Contact</a></li>
+                    <button class="link" id="visitButton">Order Now</button>  
+                </ul>
+            </nav>
+        </header>
+        <!---Menu comboination can be switched out just by changing the image and text, the idea was to have it dynamically generated each day but I ran out of time--->
+        <h1 class="title">Today's Deal</h1>
+        <div class="deal">
+            <div class="deal-image">
+                <img src="../images/eggtoast.png" alt="Deal Image">
+                <h2 alt="Deal Name"> Egg Toast </h2>
+            </div>
+            <div class="plus">
+                <p alt="Sign"> + </p>
+            </div>
+            <div class="deal-image">
+                <img src="../images/raspcake.png" alt="Deal Image">
+                <h2 alt="Deal Name"> Raspberry Cake </h2>
+            </div>
+            <div class="equal">
+                <p alt="Sign"> = </p>
+            </div>
+            <div class="deal-price">
+                <h1 alt="Deal Price"> 20$ </h1>
+            </div>
+        </div>
+    </body>
+
+        <!--Footer with quicklinks, logo, copyright and other info-->
+        <footer>
+            <div class="footer-left">
+                <img src="/images/cafelogo.png" alt="LogoFooter">
+            </div>
+            <div class="footer-middle">
+                <div class="quick-links">
+                    <h1 id="qulink">Quick Links</h1>
+                    <ul>
+                        <li><a href="../HTML Files/maincafe.html">Home</a></li>
+                        <li><a href="../HTML Files/menucafe.html">Full Menu</a></li>
+                        <li><a href="../HTML Files/dealcafe.html">Daily Deal</a></li>
+                        <li><a href="../HTML Files/contactcafe.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-right">
+                <p>&copy; 2024 CoogEats. All rights reserved.</p>
+                <p>
+                    Website developed by the CoogEats team.<br>
+                    for more infromation:<br>
+                    call: (123) 456-789 <br>
+                    email: info@coogeats.com
+                </p>
+            </div>
+        </footer>
+
+        <!--link to order page-->
+    <script>
+        document.getElementById("visitButton").addEventListener("click", function() {
+            window.location.href = "../HTML Files/ordercafe.html";
+        });
+    </script>
+        
+    </html>
+</html>

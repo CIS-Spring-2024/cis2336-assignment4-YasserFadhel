@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS Files/maincafe.css">
+    <title>Welcome to CoogEats</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/cafelogo.png" alt="Logo">
+        </div>
+
+ <!--navigation bar-->
+        <nav>
+            <ul>
+                <li><a href="../HTML Files/maincafe.html">Home</a></li>
+                <li><a href="../HTML Files/menucafe.html">Full Menu</a></li>
+                <li><a href="../HTML Files/dealcafe.html">Daily Deal</a></li>
+                <li><a href="../HTML Files/contactcafe.html">Contact</a></li>
+                <button class="link" id="visitButton">Order Now</button> 
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+ <!--Text overlaying an image-->
+        <div class="title">
+            <h1>Welcome to CoogEats</h1>
+            <p class="cursive">Where great food meets great vibes!</p>
+        </div>
+
+<!--About us section-->
+        <div class="about">
+            <h1>ABOUT US</h1>
+            <p class="desc">
+                CoogEats is a vibrant cafeteria located at the University of Houston Sugar Land campus.
+                <br>We pride ourselves on offering a diverse range of delicious and freshly prepared meals to cater to the diverse tastes of our patrons. 
+                <br>Our cafeteria is not just a place to dine; it's a hub of culinary excellence, where students, faculty, and visitors gather to savor mouthwatering dishes, socialize, and fuel their academic pursuits. 
+                <br>Whether you're looking for a quick bite between classes or a relaxing meal with friends, CoogEats is the perfect destination for a satisfying dining experience.
+            </p>
+        </div>
+
+<!--The following is a bunch of overlayed divs that create overlapping elements-->
+        <div class="location-section">
+            <div class="location-image">
+                <img src="../images/extcafe.jpg" alt="Location Image">
+                <div class="overlay">
+                    <div class="location-text">
+                        <h2>Our Location</h2>
+                        <p>CoogEats is conveniently located at the University of Houston Sugar Land campus<br> 
+                             <br>14000 University Blvd, Sugar Land, TX 77479<br>
+                             <br>We look forward to see you!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+    
+<!--Footer with quicklinks, logo, copyright and other info-->
+    <footer>
+        <div class="footer-left">
+            <img src="/images/cafelogo.png" alt="LogoFooter">
+        </div>
+        <div class="footer-middle">
+            <div class="quick-links">
+                <h1 id="qulink">Quick Links</h1>
+                <ul>
+                    <li><a href="../HTML Files/maincafe.html">Home</a></li>
+                    <li><a href="../HTML Files/menucafe.html">Full Menu</a></li>
+                    <li><a href="../HTML Files/dealcafe.html">Daily Deal</a></li>
+                    <li><a href="../HTML Files/contactcafe.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>&copy; 2024 CoogEats. All rights reserved.</p>
+            <p>
+                Website developed by the CoogEats team.<br>
+                for more infromation:<br>
+                call: (123) 456-789 <br>
+                email: info@coogeats.com
+            </p>
+        </div>
+    </footer>
+    
+    
+<!--scripts are the same as the bio page-->
+    <script> 
+        // Redirect to the order page when the button is clicked
+        document.getElementById("visitButton").addEventListener("click", function() {
+            window.location.href = "OrderCafe.html";
+        });
+
+        // Trigger animations for header and title when page loads.
+        window.addEventListener("load", function() {
+            // Animation for the header
+            var header = document.querySelector('header');
+            if (header) {
+                header.style.animationPlayState = 'running';
+            }
+
+            // Animation for the title
+            var title = document.querySelector('.title');
+            if (title) {
+                title.style.animationPlayState = 'running';
+            }
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../CSS Files/contactcafe.css">
+        <title>CoogEats | Contact</title>
+    </head>
+    <body>
+        <!---Navigation bar--->
+        <header>
+            <div class="logo">
+                <img src="../images/cafelogo.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                <li><a href="../HTML Files/maincafe.html">Home</a></li>
+                <li><a href="../HTML Files/menucafe.html">Full Menu</a></li>
+                <li><a href="../HTML Files/dealcafe.html">Daily Deal</a></li>
+                <li><a href="../HTML Files/contactcafe.html">Contact</a></li>
+                <button class="link" id="visitButton">Order Now</button>  
+                </ul>
+            </nav>
+        </header>
+        <body>
+            <!---contact info-->
+            <div class="contact">
+                <h1>CONTACT US</h1>
+                <p class="desc">
+                    <br>CoogEats is located at the University of Houston Sugar Land campus.
+                    <br>14000 University Blvd, Sugar Land, TX 77479<br>
+                    <br>Phone: (281) 275-3300<br>
+                    <br>Email: info@coogeats.com<br>
+                </p>
+            </div>
+            <!---create a form that allows the user to send a message using mailto-->
+            <div class="form">
+                <h1>SEND US A MESSAGE</h1>
+                <form action="mailto: info@coogeats.com"
+                    method="post"
+                    enctype="text/plain">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </body>
+
+        <!--Footer with quicklinks, logo, copyright and other info-->
+    <footer>
+        <div class="footer-left">
+            <img src="/images/cafelogo.png" alt="LogoFooter">
+        </div>
+        <div class="footer-middle">
+            <div class="quick-links">
+                <h1 id="qulink">Quick Links</h1>
+                <ul>
+                    <li><a href="../HTML Files/maincafe.html">Home</a></li>
+                    <li><a href="../HTML Files/menucafe.html">Full Menu</a></li>
+                    <li><a href="../HTML Files/dealcafe.html">Daily Deal</a></li>
+                    <li><a href="../HTML Files/contactcafe.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>&copy; 2024 CoogEats. All rights reserved.</p>
+            <p>
+                Website developed by the CoogEats team.<br>
+                for more infromation:<br>
+                call: (123) 456-789 <br>
+                email: info@coogeats.com
+            </p>
+        </div>
+    </footer>
+
+    <!--link to order page-->
+    <script>
+        document.getElementById("visitButton").addEventListener("click", function() {
+            window.location.href = "../HTML Files/ordercafe.html";
+        });
+    </script>
+    
+</html>

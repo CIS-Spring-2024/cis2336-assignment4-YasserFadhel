@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Licorice&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS Files/menucafe.css">
+    <title>CoogEats | Full Menu</title>
+</head>
+
+<body class=""></body>
+    <header>
+     <!--logo-->
+        <div class="logo">
+            <img src="../images/cafelogo.png" alt="Logo">
+        </div>
+
+    <!--navigation bar-->
+        <nav>
+            <ul>
+                <li><a href="../HTML Files/maincafe.html">Home</a></li>
+                <li><a href="../HTML Files/menucafe.html">Full Menu</a></li>
+                <li><a href="../HTML Files/dealcafe.html">Daily Deal</a></li>
+                <li><a href="../HTML Files/contactcafe.html">Contact</a></li>
+                <button class="link" id="visitButton">Order Now</button>  
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        
+        <!--Title of Menu Page-->
+        <main>
+            <h1>FEATURED ITEMS</h1>
+        </main>
+
+        <!-- Carousel -->
+        <div class="carousel">
+            <div class="slide active">
+                <img src="../images/carimg1.jpg" alt="Featured Item 1">
+                <h1 class="name"></h1>
+                <p class="subtitle"></p>
+            </div>
+            <div class="slide">
+                <img src="../images/carimg2.jpg" alt="Featured Item 2">
+                <h1 class="name"></h1>
+                <p class="subtitle"></p>
+
+            </div>
+            <div class="slide">
+                <img src="../images/carimg3.jpg" alt="Featured Item 3">
+                <h1 class="name"></h1>
+                <p class="subtitle"></p>
+            </div>
+
+            <button class="prev">Previous</button>
+            <button class="next">Next</button>
+    </div>
+    
+    <!--Menu Heading-->
+        <main>
+            <h1>OUR MENU</h1>
+        </main>
+
+     <!--The list of the menu items, to be setup in JS & CSS-->
+        <div class="list">
+        </div>
+
+    </div>
+
+    <!--Footer with quicklinks, logo, copyright and other info-->
+    <footer>
+        <div class="footer-left">
+            <img src="../images/cafelogo.png" alt="LogoFooter">
+        </div>
+        <div class="footer-middle">
+            <div class="quick-links">
+                <h1 id="qulink">Quick Links</h1>
+                <ul>
+                <li><a href="../HTML Files/maincafe.html">Home</a></li>
+                <li><a href="../HTML Files/menucafe.html">Full Menu</a></li>
+                <li><a href="../HTML Files/dealcafe.html">Daily Deal</a></li>
+                <li><a href="../HTML Files/contactcafe.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p>&copy; 2024 CoogEats. All rights reserved.</p>
+            <p>
+                Website developed by the CoogEats team.<br>
+                for more infromation:<br>
+                call: (123) 456-789 <br>
+                email: info@coogeats.com
+            </p>
+        </div>
+    </footer>
+
+     <!--Link to the JS file-->
+    <script src="../JS Files/menucafe.js"></script>
+    
+    <!--link to order page-->
+    <script>
+        document.getElementById("visitButton").addEventListener("click", function() {
+            window.location.href = "../HTML Files/ordercafe.html";
+        });
+    </script>
+
+</body>
+</html>
