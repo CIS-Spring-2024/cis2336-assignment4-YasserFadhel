@@ -123,6 +123,7 @@ document.querySelector('.total').addEventListener('click', () => {
         // Redirect to confirmation page with total amount
         const totalAmount = total.innerText;
         window.location.href = `/confirm-order?totalAmount=${totalAmount}`;
+        window.location.href = "../HTML Files/confirmation.html";
     }
 });
 
